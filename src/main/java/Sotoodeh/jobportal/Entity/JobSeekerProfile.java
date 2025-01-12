@@ -28,7 +28,7 @@ public class JobSeekerProfile {
     @Column(nullable = true, length = 64)
     private String profilePhoto;
 
-    @OneToMany(targetEntity = Skills.class, cascade = CascadeType.ALL, mappedBy = "jobSeekerProfile")
+    @OneToMany(targetEntity = Skills.class, cascade = CascadeType.ALL, mappedBy = "jobseekerprofile")
     private List<Skills> skills;
 
     public JobSeekerProfile(Users userId) {
